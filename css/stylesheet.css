@@ -224,10 +224,60 @@ button[type="submit"]:focus {
     background: #fff;
     padding: 40px;
 }
-section {
+
+.about
+{
+    margin-bottom: 50px;
+
+}
+
+.about:last-child
+{
+    margin-bottom: 0;
+}
+
+.title2
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.about .box
+{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-  }
-  
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_company
+{
+    min-width: 150px;
+}
+
+.about .box .year_company h5
+{
+    text-transform: uppercase;
+}
+
+.interest ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+.interest ul li
+{
+    margin: 10px 0;
+}
+
+@media (max-width: 1000px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,2fr);
+    }
+}
